@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppIoT</string>
+    <string name="background_image" />
+    <string name="sistema_de_monitoreo_iot_para_contenedores_de_reciclaje">Sistema de Monitoreo IoT para contenedores de reciclaje</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="todo">TODO</string>
+    <string name="Iniciar_sesion">Iniciar Sesión</string>
+    <string name="comenzar">Comenzar</string>
+</resources>

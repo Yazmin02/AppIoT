@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="0dp">
+
+    <!-- Fondo de pantalla -->
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo2"
+        android:contentDescription="@string/background_image"
+        android:scaleType="centerCrop"
+        android:alpha="0.6" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:paddingStart="0dp"
+        android:text="@string/sistema_de_monitoreo_iot_para_contenedores_de_reciclaje"
+        android:textColor="#333333"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        tools:ignore="RtlSymmetry" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="391dp"
+        android:layout_height="304dp"
+        android:layout_below="@id/titulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo" />
+
+    <!-- Botón de inicio -->
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/redondo"
+        android:contentDescription="@string/comenzar"
+        android:text="@string/comenzar"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+</RelativeLayout>
