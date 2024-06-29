@@ -4,6 +4,105 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
-    <!-- Aquí puedes agregar tus vistas para la pantalla de inicio de sesión -->
+    <!-- Fondo de pantalla -->
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@color/teal_700"
+        android:contentDescription="@string/background_image"
+        android:scaleType="centerCrop"
+        android:alpha="0.4" />
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="331dp"
+        android:layout_height="246dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/user" />
+
+    <!-- Etiqueta para nombre de usuario -->
+    <TextView
+        android:id="@+id/username_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/username"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:textSize="25sp" />
+
+    <!-- Campo de texto para el nombre de usuario -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/username_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- Etiqueta para contraseña -->
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="@string/password"
+        android:textColor="#000000"
+        android:textStyle="italic"
+        android:textSize="25sp" />
+
+    <!-- Campo de texto para la contraseña -->
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/password_label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext_background"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <!-- Botón de iniciar sesión -->
+    <Button
+        android:id="@+id/loginbt"
+        android:layout_width="246dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/redondo"
+        android:text="@string/Iniciar_sesion"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/registerbt"
+        android:layout_width="146dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/loginbt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/redondo"
+        android:text="@string/registarse"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp" />
 
 </RelativeLayout>

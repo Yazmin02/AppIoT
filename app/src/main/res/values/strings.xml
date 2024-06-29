@@ -6,4 +6,9 @@
     <string name="todo">TODO</string>
     <string name="Iniciar_sesion">Iniciar Sesión</string>
     <string name="comenzar">Comenzar</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="registarse">Registrarse</string>
+    <string name="email">Correo electrónico</string>
+    <string name="continuar">Continuar</string>
 </resources>
