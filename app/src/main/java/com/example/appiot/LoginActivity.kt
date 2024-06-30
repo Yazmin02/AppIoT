@@ -44,10 +44,12 @@ class LoginActivity : AppCompatActivity() {
             }
         }
     }
-    data class LoginRequest(val nombre: String, val contrasena: String)
+    data class LoginRequest(
+        val email: String,
+        val password: String)
 
     private fun sendLoginRequest(loginRequest: LoginRequest) {
-        val url = "http://localhost:7030/api/authenticate_user"
+        val url = "https://backendiot.azurewebsites.net/api/authenticate_user"
         val gson = GsonBuilder().create()
         val json = gson.toJson(loginRequest)
         val requestBody = RequestBody.create(MediaType.parse("application/json"), json)

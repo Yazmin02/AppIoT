@@ -20,7 +20,7 @@
         android:layout_width="331dp"
         android:layout_height="246dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:contentDescription="@string/todo"
         android:src="@drawable/user" />
 
@@ -114,7 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/password"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/redondo"
         android:text="@string/continuar"
         android:textColor="#FFFFFF"

@@ -1,5 +1,6 @@
 package com.example.appiot
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -41,13 +42,13 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     data class RegisterRequest(
-        val nombre: String,
-        val correo: String,
-        val contraseña: String
+        val name: String,
+        val email: String,
+        val password: String
     )
 
     private fun sendRegisterRequest(registerRequest: RegisterRequest) {
-        val url = "http://localhost:7030/api/register_user"
+        val url = "https://backendiot.azurewebsites.net/api/register_user"
         val gson = GsonBuilder().create()
         val json = gson.toJson(registerRequest)
         val requestBody = RequestBody.create(MediaType.parse("application/json"), json)
@@ -63,7 +64,9 @@ class RegisterActivity : AppCompatActivity() {
                 if (response.isSuccessful) {
                     runOnUiThread {
                         Toast.makeText(applicationContext, "Registro exitoso", Toast.LENGTH_SHORT).show()
-                        // Aquí puedes dirigir al usuario a la actividad de inicio de sesión o a otra actividad según tu flujo
+                        // Redirigir al usuario a LoginActivity
+                        startActivity(Intent(applicationContext, LoginActivity::class.java))
+                        finish() // Finalizar RegisterActivity para que no pueda volver atrás con el botón de atrás
                     }
                 } else {
                     runOnUiThread {
